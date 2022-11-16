@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <title>HJ Codin Password Generator</title>
+  </head>
+  <body>
+    <div class="container d-flex justify-content-center  min-vh-100 flex-column">
+        <div class="wrapper d-flex  flex-column">
+            <h1 class="text-uppercase text-danger text-center">password generator</h1>
+        </div>
+        <label for="passwordLength" class="fw-bold text-uppercase">Panjang Password</label>
+        <input class="form-control form-control-lg" id="passwordLength" type="number">
+        <label for="password" class="fw-bold text-uppercase">password</label>
+        <input class="form-control form-control-lg"id="password" disabled>
+        <button class="btn btn-success text-uppercase fw-bold mt-3" onclick="getPassword()">generate password</button>
+        <button class="btn btn-primary text-uppercase fw-bold mt-3" id="saveButton" onclick="savePassword()" >save password</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
